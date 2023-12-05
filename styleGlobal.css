@@ -1,0 +1,55 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    width: 470px; /* Defina a largura desejada para o elemento */
+    height: 50%; /* Defina a altura desejada para o elemento */
+    position: fixed; /* Usa position: fixed para centralizar na tela visível */
+    top: 50%; /* Move o elemento para 50% da altura da janela de visualização */
+    left: 50%; /* Move o elemento para 50% da largura da janela de visualização */
+    transform: translate(-50%, -50%);
+    border-radius: 10px; /* Adiciona um raio de borda de 10px */
+    background-color: rgba(71, 116, 240, 0.8);
+    padding-top: 10px;
+    align-items: flex-start;
+    box-sizing: border-box;
+
+}
+
+.content .cabecalhoWin{
+
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover espaçamento interno */
+    position:relative;
+    top: -20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(90, 72, 240, 1);
+    display:grid;
+    
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+    -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.content #esp-login{
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+}
+
