@@ -1,11 +1,21 @@
+ /* Estilo geral da pagina */
+
 *{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+
+    
+    font-family: 'Roboto', sans-serif; /* Define a fonte da pagina inteira */
+    box-sizing: border-box; /* Define tamanho total do conteudo da pagina */
 }
 
 body{
-    background-image: url('background.jpg');
-    background-size: cover;
+    /*background-image: url('background.jpg'); /* Define a imagem de fundo do body */
+    background-size: cover; /* Background cobre todo */
+    background: linear-gradient(to bottom right, #ffcc00, #ff3300);
+    height: 100vh;
+    margin: 0;
+    /* Caso deseje, adicione estilos para o texto para melhorar a legibilidade */
+    color: white;
+    padding-top: 40vh;
 }
 
 body, html {
@@ -14,18 +24,16 @@ body, html {
 }
 
 .content{
-    width: 470px; /* Defina a largura desejada para o elemento */
-    height: 50%; /* Defina a altura desejada para o elemento */
-    position: fixed; /* Usa position: fixed para centralizar na tela visível */
-    top: 50%; /* Move o elemento para 50% da altura da janela de visualização */
-    left: 50%; /* Move o elemento para 50% da largura da janela de visualização */
+    width: 470px; /* Defina a largura do content. */
+    height: 50%; /* Defina a altura do content */
+    position: absolute;
+    top: 50%; /* Move o content para 50% da altura da janela de visualização */
+    left: 50%; /* Move o content para 50% da largura da janela de visualização */
     transform: translate(-50%, -50%);
     border-radius: 10px; /* Adiciona um raio de borda de 10px */
     background-color: rgba(71, 116, 240, 0.8);
-    padding-top: 10px;
     align-items: flex-start;
     box-sizing: border-box;
-
 }
 
 .content .cabecalhoWin{
@@ -42,14 +50,60 @@ body, html {
     border-bottom-right-radius: 50px;
     background-color: rgba(90, 72, 240, 1);
     display:grid;
-    
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
     -2px 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 
 
 .content #esp-login{
     padding-top: 1.5rem;
     padding-left: 5rem;
+    
 }
+
+
+.content #esp-login input[type="text"],
+.content #esp-login input[type="password"] {
+  width: 15rem; /* Largura desejada para os campos */
+  height: 2.5rem; /* Altura desejada para os campos */
+  border-radius: 3rem;
+  box-shadow: none; /* Remove qualquer sombra */
+  outline: none; /* Remove a linha de foco */
+  border: none; /* Remove a borda padrão */
+  padding-left: 10px;
+}
+
+
+input[type="submit"] {
+    /* Defina a cor de fundo desejada para o botão */
+    background-color: rgb(0, 184, 0);
+    color: rgb(240, 240, 240);
+    width: 10rem;
+    height: 2.5rem;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+
+    margin-left: 10%;
+    margin-right: auto;
+    display: block;
+    position: relative;
+
+  }
+
+  @media screen and (min-height: 992px){
+    .content{
+        height: 20rem;
+        
+    }
+}
+
+
+
+  
+
+
+
+
 
